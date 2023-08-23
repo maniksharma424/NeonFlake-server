@@ -1,7 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
 import thumbnailRoutes from "./routes/thumbnailRoutes.js";
-import { errorHandler, notFound } from "./middleware/errorMiddleWare.js";
 import connectDB from "./config/db.js";
 
 dotenv.config();
@@ -17,9 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/thumbnails", thumbnailRoutes);
 
-app.use(errorHandler);
 
-app.use(notFound);
 
 app.get("/", (req, res) => {
   res.send("server is ready");
