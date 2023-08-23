@@ -1,55 +1,64 @@
 
 <html>
-<head>
 
+<head>
+  <title>NeonFlake Backend</title>
 </head>
+
 <body>
-  <h1>MERN Authentication</h1>
-  <p>Welcome to the MERN Authentication repository! This repository provides a basic authentication setup for MERN (MongoDB, Express.js, React.js, Node.js) stack projects. It offers a simple and efficient way to integrate login, logout, registration, profile retrieval, and profile updating functionalities into your frontend.</p>
+  <h1>NeonFlake Backend - Image and Video Upload API</h1>
+  <p>Welcome to the NeonFlake backend repository! This backend provides the functionality to upload images and videos to Cloudinary with titles and descriptions. It's designed to be used with the NeonFlake frontend application.</p>
+
   <h2>Features</h2>
   <ul>
-    <li>Login: Allow users to securely log in to your application.</li>
-    <li>Logout: Provide an easy way for users to log out of their accounts.</li>
-    <li>Registration: Enable new users to create accounts and join your platform.</li>
-    <li>Profile Retrieval: Retrieve user profiles with ease.</li>
-    <li>Profile Updating: Allow users to update their profile information.</li>
+    <li>Image and Video Upload: Allow users to securely upload images and videos to Cloudinary.</li>
+    <li>Title and Description: Collect title and description information for uploaded media.</li>
   </ul>
+
   <h2>Technologies Used</h2>
   <ul>
-    <li>Express: A robust and flexible web application framework for Node.js that simplifies API development.</li>
-    <li>bcrypt.js: A library used for password hashing to enhance security.</li>
-    <li>cookie-parser: Enables storing user data securely in cookies for efficient session management.</li>
-    <li>dotenv: Facilitates the use of environment variables, ensuring sensitive information remains protected.</li>
-    <li>JSON Web Token (JWT): Generates secure tokens for user authentication and authorization.</li>
+    <li>Node.js: A versatile JavaScript runtime for building server-side applications.</li>
+    <li>Express.js: A web application framework for Node.js that simplifies API development.</li>
+    <li>Cloudinary: A cloud-based media management platform for image and video hosting.</li>
   </ul>
+
   <h2>Getting Started</h2>
   <ol>
     <li>Clone the repository: <code>git clone [insert repository link]</code></li>
-    <li>Navigate to the project directory: <code>cd mern-authentication</code></li>
+    <li>Navigate to the project directory: <code>cd neonflake-backend</code></li>
     <li>Install the dependencies: <code>npm install</code></li>
     <li>Set up the environment variables:</li>
-      <ul>
-        <li>Create a <code>.env</code> file in the project root directory.</li>
-        <li>Add the required environment variables in the <code>.env</code> file. For example:
-          <pre><code>PORT=3000
-MONGODB_URI=your-mongodb-uri
-SECRET_KEY=your-secret-key</code></pre>
-        </li>
-      </ul>
+    <ul>
+      <li>Create a <code>.env</code> file in the project root directory.</li>
+      <li>Add the required environment variables in the <code>.env</code> file. For example:
+        <pre><code>CLOUDINARY_CLOUD_NAME=your-cloud-name
+CLOUDINARY_API_KEY=your-api-key
+CLOUDINARY_API_SECRET=your-api-secret</code></pre>
+      </li>
+    </ul>
     <li>Run the application: <code>npm start</code></li>
-    <li>Open your browser and access the application at <code>http://localhost:3000</code></li>
+    <li>The server will run on <code>http://localhost:3000</code> by default.</li>
   </ol>
-  <h2>Custom Error Middleware</h2>
-  <p>This repository also includes a custom error middleware that provides a better error handling experience. In development mode, the error middleware sends a JSON object with a custom message and stack trace. In production mode, it returns null to ensure a cleaner error handling process.</p>
+
+  <h2>API Endpoints</h2>
+  <ul>
+    <li><code>POST /upload</code>: Uploads an image or video to Cloudinary with title and description.</li>
+  </ul>
+
+  <h2>Deployment</h2>
+  <p>The NeonFlake backend can be easily deployed to Render.com or any other hosting platform that supports Node.js applications. Make sure to set up environment variables for Cloudinary credentials in your deployment environment.</p>
+
   <h2>Contributions</h2>
-  <p>Contributions to this repository are welcome! If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request.</p>
+  <p>Contributions to the NeonFlake backend are welcome! If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request.</p>
+
   <h2>License</h2>
   <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-  <hr>
-  <p>Let's simplify authentication together and create amazing user experiences!</p>
-  <p>#MERN #Authentication #OpenSource #GitHub</p>
-</body>
-</html>bject with a custom message and stack trace. In production mode, it returns null to ensure a cleaner error handling process.
 
-Contributions
-Contributions to this repository are welcome! If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request.
+  <hr>
+
+  <p>Let's simplify image and video uploads together and create amazing experiences!</p>
+  <p>#NeonFlake #ImageUpload #VideoUpload #OpenSource #GitHub</p>
+</body>
+
+</html>
+
