@@ -1,10 +1,6 @@
 
 <html>
 
-<head>
-  <title>NeonFlake Backend</title>
-</head>
-
 <body>
   <h1>NeonFlake Backend - Image and Video Upload API</h1>
   <p>Welcome to the NeonFlake backend repository! This backend provides the functionality to upload images and videos to Cloudinary with titles and descriptions. It's designed to be used with the NeonFlake frontend application.</p>
